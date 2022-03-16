@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/Daisy/Desktop/shuishenchuruzheng.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" href="file:///C:/Users/Daisy/Desktop/qinjiatiao_files/index.css">
+    <title></title>
+<style type="text/css">
+    html {
+        font-size: 50px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @media screen and (min-width: 320px) {
+        html {
+            font-size: 21.33333333px;
+        }
+    }
+    
+    @media screen and (min-width: 360px) {
+        html {
+            font-size: 24px;
+        }
+    }
+    
+    @media screen and (min-width: 375px) {
+        html {
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (min-width: 384px) {
+        html {
+            font-size: 25.6px;
+        }
+    }
+    
+    @media screen and (min-width: 400px) {
+        html {
+            font-size: 26.66666667px;
+        }
+    }
+    
+    @media screen and (min-width: 414px) {
+        html {
+            font-size: 27.6px;
+        }
+    }
+    
+    @media screen and (min-width: 424px) {
+        html {
+            font-size: 28.26666667px;
+        }
+    }
+    
+    @media screen and (min-width: 480px) {
+        html {
+            font-size: 32px;
+        }
+    }
+    
+    @media screen and (min-width: 540px) {
+        html {
+            font-size: 36px;
+        }
+    }
+    
+    @media screen and (min-width: 720px) {
+        html {
+            font-size: 48px;
+        }
+    }
+    
+    @media screen and (min-width: 750px) {
+        html {
+            font-size: 50px;
+        }
+    }
+    
+    body {
+        min-width: 320px;
+        width: 15rem;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-family: Arial, Helvetica;
+        background: #F2F2F2;
+        height: 3000px;
+    }
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+    .as {
+        padding-top: .005rem;
+        padding-bottom: .005rem;
+        font-size: .75rem;
+        background: white;
+    }
+    
+    .as p {
+        line-height: 1.4rem;
+        text-align: center;
+    }
+    
+    .mid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4rem;
+    }
+    
+    #student {
+        text-align: center;
+        padding-top: 0.4rem;
+        font-size: .7rem;
+    }
+    
+    .common1 {
+        justify-content: flex-start;
+        font-size: .5rem;
+    }
+    
+    #current {
+        margin-top: .4rem;
+        color: green;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    
+    .middle {
+        justify-content: flex-end;
+        font-size: .5rem;
+    }
+    
+    .timeup {
+        background: white;
+        height: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .timeupp {
+        background: white;
+        height: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+    }
+    
+    .timeupp p {
+        padding: .3rem .4rem;
+        line-height: 0.9rem;
+    }
+    
+    .timeup p {
+        padding: 0.2rem;
+    }
+    
+    .tui-checkbox:checked {
+        background: #1673ff
+    }
+    
+    .tui-checkbox {
+        top: -11px;
+        left: 0;
+        width: 0.8rem;
+        height: 0.8rem;
+        background-color: #ffffff;
+        border: solid 1px #dddddd;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        cursor: default;
+        -webkit-appearance: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-transition: background-color ease 0.1s;
+        transition: background-color ease 0.1s;
+    }
+    
+    .tui-checkbox:checked::after {
+        content: '';
+        top: 0.01rem;
+        left: 0.01rem;
+        position: absolute;
+        background: transparent;
+        border: #fff solid 2px;
+        border-top: none;
+        border-right: none;
+        height: 0.3rem;
+        width: 0.5rem;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+</style><script type="text/javascript">
+    setInterval(function() {
+        var time = new Date();
+        var years = checkTime(time.getFullYear());
+        var month = checkTime(time.getMonth() + 1);
+        var day = checkTime(time.getDate());
+        var hour = checkTime(time.getHours()); //获取时
+        var minute = checkTime(time.getMinutes()); //获取分
+        var second = checkTime(time.getSeconds()); //获取秒
+        var minsecond = checkTime(time.getMilliseconds());
+        /****当时、分、秒、小于10时，则添加0****/
+        function checkTime(i) {
+            if (i < 10) return "0" + i;
+            return i;
+        }
+
+        var box = document.getElementById("onclock");
+        box.innerHTML =
+            "<span >" + years + "</span>" +
+            "<span >-</span>" +
+            "<span >" + month + "</span>" +
+            "<span >-</span>" +
+            "<span >" + day + "</span>" +
+            "<span >&nbsp&nbsp</span>" +
+            "<span >" + hour + "</span>" +
+            "<span >:</span>" +
+            "<span >" + minute + "</span>" +
+            "<span >:</span>" +
+            "<span >" + second + "</span>" +
+            "<span >:</span>" +
+            "<span >" + minsecond + "</span>" +
+            "<span ></span>";
+    }, 1);
+</script></head>
+
+
+
+<body>
+
+    <div class="as">
+        <p>我的事务</p>
+    </div>
+    <h1 id="student">学生出入校申请（市内一天）</h1>
+    <div class="mid">
+        <div class="common1">
+            <p style="color: #afa5a5; margin-left: .4rem"> 当前处理人： 李美丽</p>
+            <p style="color: #afa5a5; margin-left: .8rem">当前状态：学生申请销假</p>
+            <p style="color: #afa5a5; margin-left: .8rem">流转记录：<a style="color: #c70101" href="http://myanswer.club/qinjiatiao.html#">查看流转记录</a></p>
+            <p style="font-size: .6rem; color: #888889; line-height: 2rem; margin-left: .2rem">个人基本信息</p>
+        </div>
+        <div class="middle">
+            <div class="common2">
+                <p style="color: #afa5a5; margin-right: .5rem">申请时间：2022-03-03 11：02</p>
+            </div>
+            <div class="common2">
+                <p style="color: #afa5a5; margin-right: 2rem; padding-left:1rem">申请者：李美丽</p>
+            </div>
+            <div class="common2">
+                <p style="color: #afa5a5; margin-right: 1rem;">图形监控：<a style="color: #c70101" href="http://myanswer.club/qinjiatiao.html#">查看流程图</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="timeupp">
+        <div style="justify-content: flex-start;font-size: 0.6rem">
+            <p style="color:#C0C0C1">录取号</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                学号</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                姓名</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                性别</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                学院</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                寝室号</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1">
+                申请时间</p>
+            <hr style="color:#EDECED; width: 2500%;border-top-width: 0px">
+            <p style="color:#C0C0C1"><span style="color: #ef3232"></span>*联系电话</p>
+            <hr style="color: #EDECED; width: 2500%;border-top-width: 0px">
+        </div>
+        <div style="justify-content: flex-end;font-size: 0.6rem">
+            <p>201813151</p>
+            <p>091840121</p>
+            <p>李美丽</p>
+            <p>女</p>
+            <p>体育学院</p>
+            <p>立人7栋-408</p>
+            <p>2022-03-03 11:02</p>
+            <p>15707291723</p>
+        </div>
+    </div>
+    <div>
+        <p id="current">允许通行</p>
+        <p style="color: #ef3232; font-size: 0.8rem; line-height: 1.6rem; text-align: center;">当前时间：<span id="onclock"><span>2021</span><span>-</span><span>07</span><span>-</span><span>07</span><span>&nbsp;&nbsp;</span><span>20</span><span>:</span><span>48</span><span>:</span><span>59</span><span>:</span><span>943</span><span></span></span></p>
+
+    </div>
+    <div class="timeup">
+        <div style="justify-content: flex-start;font-size: 0.6rem">
+            <p><span style="color: #ef3232">*</span>出行开始时间</p>
+            <hr style="color: #EDECED; width: 502%">
+            <p><span style="color: #ef3232">*</span>出行结束时间</p>
+            <hr style="color: #EDECED; width: 502%">
+            <p><span style="color: #ef3232">*</span>是否有课</p>
+            <hr style="color: #EDECED; width: 502%">
+        </div>
+        <div style="justify-content: flex-end;font-size: 0.6rem">
+            <p>2022-03-03 20：30</p>
+            <hr style="color: #EDECED;">
+            <p>2022-03-05 20：30</p>
+            <hr style="color: #EDECED;">
+            <input type="radio" name="YN" value="yes">是
+            <input type="radio" name="YN" value="no">否
+        </div>
+    </div>
+    <div style="background: white;font-size: 0.6rem;">
+        <p style="text-align: left">&nbsp;<span style="color: #ef3232 ; ">*</span>外出事由</p>
+        <p style="text-align: left">有事外出，请门卫叔叔放行</p>
+    </div>
+    <div style="background: white;font-size: 0.6rem;">
+        <p style="text-align: left">&nbsp;<span style="color: #ef3232">*</span>预计路线</p>
+        <p style="text-align: left">&nbsp;&nbsp;湖北民族大学附近</p>
+    </div>
+    <div style="background: white; display: flex; justify-content: flex-start; padding: 0rem;font-size: 0.6rem;">
+        <div style="margin-top: 1rem; margin-left: .5rem; margin-right: 1rem"><input name="checkbox" value="Item 1" type="checkbox" class="tui-checkbox "></div>
+        <div>
+            <p style="color: #ef3232">本人承诺：以上表格所填写的内容完全属实，如有隐瞒、伪造，一切责任自负。</p>
+        </div>
+    </div>
+    <p style="text-align: left;color: #ef3232;font-size: 0.7rem;">审批记录</p>
+    <p style="text-align: left;font-size: 0.6rem;">&nbsp;&nbsp;学生申请<span style="color: #53b630">李美丽/教学单位/体育学院</span>
+        <span style="color: #afa5a5">2022-03-03 11:02</span></p>
+    <hr style="border: 1px dashed #dcdbdb">
+    <p style="color: #ef3232; text-align: left;font-size: 0.7rem;">同意</p>
+    <p style="text-align: left;font-size: 0.6rem;">&nbsp;&nbsp;班主任、辅导员审核<span style="color: #53b630">姜树凤/教学单位/体育学院</span><span style="color: #afa5a5">2022-03-03 12:32</span></p>
+    <hr style="border: 1px dashed #dcdbdb">
+
+
+
+
+
+</body></html>
